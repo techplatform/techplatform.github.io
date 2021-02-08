@@ -1,6 +1,10 @@
-       header, nav, main, footer {
+    
+       
+header, nav, main, footer {
         max-width: 1200px;
         margin:auto;
+    background-color: aqua;
+        
     }
     
    
@@ -10,12 +14,10 @@
     nav li {width:auto;}
     nav a {padding: .5rem 1rem;}
     
-    main figure { width: 31%;}
+    main figure { width: 31%; }
     
     div.news {column-count: 3;}
-    
-    figure{
-        margin-left: 0%;
-        flex-basis: 15%;
-    }
+
+
+ 
  /* end of media query */
