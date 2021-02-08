@@ -1,17 +1,42 @@
 
-    nav li {width: 25%; float: left;}
+
+
+/*----------- BODY --------------*/
+
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+
+
+
+/*----------- FOOTER --------------*/
     
-    figure.myphoto {
-        background-position: center;
-        width: 18%; 
-        margin-left: 2%;
-        padding-bottom: .5rem;
-    }
+
+    
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+    
     
     main figure {
         float: right; 
         width: 48%; 
-        margin-left: 2%;
+        margin-left: 0%;
         padding-bottom: .5rem;
     }
     
@@ -21,3 +46,8 @@
         column-rule: 1px solid #ddd;
     }
     
+    figure{
+        
+        flex-basis: 24%;
+    }
+/* end of media query */

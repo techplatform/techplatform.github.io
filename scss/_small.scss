@@ -4,83 +4,109 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* body rules */
+
+/*----------- BODY --------------*/
 body {
-    font-family: $fontFamily;
-    font-weight: $regularWeight;
     font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: ghostwhite;
 }
-div#headerWrapper{
-    background-color: $primaryColor;
-}
-header img {float:left;  padding-right: 15px;}
+
+
+/*----------- HEADER --------------*/
 header {
-    padding: .5rem $gutter;
-    color: white;
-    
-    h1 {
-        margin: 1.5rem 0 0 0; 
-        font-size: 1.5rem;
-        font-weight: $heavyWeight;
-        
-    }//end of h1
-    
-
-    h2{
-        margin: 0; 
-        margin-bottom: 20px;
-        font-size: 1.2rem; 
-        font-weight: $regularWeight;
-        
-    }// end of h2
-
-}//end of header
-
-div#navWrapper {background-color:#e4c517;}
-
-nav {
-    ul{margin:0; padding: 0;}
-    li {width: 50%; float: left; list-style-type:none;}
-    li.active {background-color: #333}
-    a {
-        display: block;
-        padding: .5rem 00; /*44px min*/
-        color: white;
-        text-align: center;
-        text-decoration: none;
-    }// end of a
-    nav a:hover {background-color: #444;}
-
-} //end of nav
-
-
-
-main{display: block; padding: 1rem $gutter;
-    figure.myphoto{
-        margin: 0;
-        background-size: cover;
-        height: auto;
-        width: 100%;
-    }
-
-    h1 {color:$primaryColor;
-        font-weight: $heavyWeight;
-    }
-    figure img {width: 100%;}
-    figure{
-        margin: 0;
-        width: 100%;    
-    }
-    figcaption {text-align: center; font-size: .8rem;}
-}// end of main
-
-
-div#footerWrapper{background-color: $primaryColor;}
-footer {
-    color: white;
-    text-align: center;
-    padding: 1rem $gutter;
+    padding: .5rem 2%;
+    background-color: #F8E9A1;
 }
+header h1 {margin:1.5rem 0 0 0; color:#F76C6C;}
+header h2 {margin: 0; font-weight: normal;}
+header img{float: left; padding-right:15px;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $menuColor;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: darken($menuColor, 30%);
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: lighten($menuColor, 5%);
+    color: #333;
+}
+nav ul li.active a {
+    background-color: darken($menuColor, 15%);
+    color: #fff;
+}
+/*----------- MAIN ----------img {max-width: 100%;
+max-height: 100%;}----*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h1 {
+    color:#F76C6C;
+    
+}
+
+div.produceGallery {
+    display: flex;
+    flex-wrap: wrap;  
+    text-align: center;
+   
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+figure{ 
+    margin-left: 0%;
+    flex-basis: 38%;   
+
+}
+
+
+/*
+div.produceGallery img{
+    width: 100%;
+    height: auto;
+}
+*/
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    
+    padding: .5rem 2%;
+    text-align: center;
+    background-color: #F8E9A1;
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
