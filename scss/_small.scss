@@ -4,109 +4,62 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
-/*----------- BODY --------------*/
+/* body rules */
 body {
+    font-family: Verdana;
     font-size: 16px;
-    font-family: Verdana, sans-serif;
-    background-color: ghostwhite;
 }
-
-
-/*----------- HEADER --------------*/
+div#headerWrapper {
+  background-image: url(../images/header-small.jpg);
+  height: 140px; 
+}
 header {
-    padding: .5rem 2%;
-    background-color: #F8E9A1;
+    color: white;
+    padding: 1rem 2%;
 }
-header h1 {margin:1.5rem 0 0 0; color:#F76C6C;}
-header h2 {margin: 0; font-weight: normal;}
-header img{float: left; padding-right:15px;}
-
-/*----------- NAVIGATION --------------*/
-nav {
-    background-color: $menuColor;
+header h1 {
+    padding-top:24px;
+	margin: 0; 
+	font-size: 2rem;
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+header h2{
+	margin: 0; 
+	font-size: 1.5rem; 
+	font-weight: normal;
 }
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
+div#navWrapper {background-color: #111;}
+nav { }
+nav ul{margin:0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {background-color: #333}
+nav a {
     display: block;
-    background-color: darken($menuColor, 30%);
+    padding: .8rem 0; /*44px min*/
     color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
     text-align: center;
+    text-decoration: none;
 }
-nav ul li:first-child a {border-left: none;}
+nav a:hover {background-color: #444;}
 
-nav ul li a:hover {
-    background-color: lighten($menuColor, 5%);
-    color: #333;
-}
-nav ul li.active a {
-    background-color: darken($menuColor, 15%);
-    color: #fff;
-}
-/*----------- MAIN --------------*/
+main{display: block; padding: 1rem 2%;}
+main h1 {color: #17a8e4;}
 
-main {
-    padding: 0 2%;
-    min-height: 10rem;
-}
-
-main h1 {
-    color:#F76C6C;
-    
-}
-
-div.produceGallery {
-    display: flex;
-    flex-wrap: wrap;  
-     text-align: center;
-    
-   
-}
-
-
-img{
-    max-width: 100%;
-    height: auto;
-    
-}
-
-
-figure{ 
-    margin-left: 0%;
-    flex-basis: 38%;   
-
-}
-
-
-/*
-div.produceGallery img{
+main figure img {width: 100%;}
+main figure{
+    margin: 0;
     width: 100%;
-    height: auto;
+    
 }
-*/
+main figcaption {text-align: center; font-size: .8rem;}
 
 
 
-/*----------- FOOTER --------------*/
+div#footerWrapper {background-color: #17a8e4;}
 footer {
     
-    padding: .5rem 2%;
     text-align: center;
-    background-color: #F8E9A1;
+    padding: 1rem 2%;
 }
-
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
