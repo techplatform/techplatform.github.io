@@ -1,0 +1,40 @@
+@media only screen and (min-width: 560px) {
+    
+    header h1 {
+	margin: 0;
+    font-size: 51px;
+}
+    header h2{
+	margin: 0; 
+	font-weight: normal;
+    font-size: 35px;
+}
+    nav li {width: 25%; float: left;}
+    
+    
+    main figure {
+        float: right; 
+        width: 48%; 
+        margin-left: 2%;
+        padding-bottom: .5rem;
+    }
+    
+    div.news {
+        clear: both;
+        column-count: 2;
+        column-rule: 1px solid #ddd;
+    }
+    
+    footer {
+        clear:both;
+    position: relative;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #802000;
+    text-align: center;
+    padding: 1rem 2%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+} /* end of media query */
