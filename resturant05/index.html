@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+<title>Our Story: Main-Course</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<header class="clearfix";>
+<!--
+    <figure class="logo">
+        <img src="images/foodlogo.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+    </figure>
+-->
+    
+    <picture class="logo">
+        <source media="(max-width: 200px)" srcset= "images/logo1.png">
+        <source media="(max-width: 560px)" srcset="images/logo2.png">
+        <source media="(max-width: 1024px)" srcset="images/logo3.png">
+        <img src="images/logo3.png" alt="food">
+    </picture>
+    
+  <h1>Main-Course</h1>
+  <h2>Let's Eat!</h2>
+</header>
+  
+<nav class="clearfix">
+<ul>
+  <li><a href="index.html">Menu</a></li>
+  <li><a href="#">Locations</a></li>
+  <li><a href="#">Contact</a></li>
+  <li class="active"><a href="#">Our Story</a></li>
+</ul>
+</nav>
+
+<main>
+    
+    <picture class="hero-image">
+        <source media="(max-width: 400px)"  srcset="images/hero450.jpg">
+        <source media="(max-width: 660px)" srcset= "images/hero600.jpg">
+        <source media="(max-width: 700px)" srcset= "images/hero750.jpg">
+        <source media="(max-width: 900px)"  srcset= "images/hero900.jpg">
+        <source media="(max-width: 1024px)" srcset= "images/hero1050.jpg">
+        <img src="images/hero.jpeg" alt="hero">
+    </picture>
+    
+    <h1>Our Founder</h1>
+    <picture class="photoA">
+        
+        <source media="(min-width: 600px)" srcset="images/chef600.jpg">
+        <source media="(min-width: 400px)" srcset="images/chef400.jpg">
+        <source media="(min-width: 200px)" srcset="images/chef200.jpg">
+
+        <img src="images/chef200.jpg" alt="food" style="width:auto;" align="right">
+    </picture>
+     
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mauris pretium, tempus elit vel, ex. Aliquam tempus arcu vitae massa fermentum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vel sapien gravida, consequat tellus non, rhoncus est. Maecenas tincidunt placerat posuere. Quisque elementum consequat augue vel finibus. Vivamus mi nibh, mattis sit amet sapien ut, posuere malesuada leo. Phasellus facilisis enim lorem, sed ultricies diam maximus in. Maecenas fermentum eu mi vitae pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mauris pretium, tempus elit vel, condimentum ex. Aliquam tempus arcu vitae massa fermentum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vel sapien gravida, consequat tellus non, rhoncus est. Maecenas tincidunt placerat posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel mauris pretium, tempus elit vel, ex. Aliquam tempus arcu vitae massa fermentum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vel sapien gravida, consequat tellus non, rhoncus est. Maecenas tincidunt placerat posuere. Quisque elementum consequat augue vel finibus. Vivamus mi nibh, mattis sit amet sapien ut, posuere malesuada leo. Phasellus facilisis enim lorem, sed ultricies diam maximus in. Maecenas fermentum eu mi vitae pretium. </p>
+
+
+    
+</main>
+
+<footer>
+&copy; 2021 • Aniela Govada • Login
+</footer>
+</body>
+</html>
