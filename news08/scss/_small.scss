@@ -1,0 +1,138 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+//
+//div#headerWrapper {background-color:blue;}
+
+body {
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+header {
+    background-color:lightblue;
+    padding: 1rem 2%;
+}
+header img {
+   float: left;   
+    margin: 1rem 0 1rem 0;
+}
+header h1 {
+	margin-left: 5rem; 
+    margin-bottom: 0;
+	font-size: 1.5rem;
+}
+header h2{
+    margin-top: 0;
+	margin-left: 5rem; 
+	font-size: 1rem; 
+	font-weight: normal;
+}
+
+//button b1{
+//    margin: .2rem 2% 0 0;
+//    background-color: transparent;
+//    border:none;
+//    font-size: 1.6rem;
+//    color:#fff;
+//    display: block;
+//    padding: 0;
+//    margin: 0;
+//}
+nav{
+    background-color: darkseagreen;
+    font-family: Verdana, sans-serif;
+  
+}
+
+//nav button{
+//    background-color:aqua;
+//    font-family: Verdana, sans-serif;
+//}
+
+
+nav button{
+    margin: .2rem 2% 0 0;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color:#fff;
+//    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a{
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color:black;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a{background-color:rgba(0,0,0,0.2); color:#fff}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {display:none;}
+main{display: block; padding: 1rem 2%;}
+
+div.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+    span{
+        display:block;
+        text-align:center;
+        font: .75rem;
+    }
+    .teaser, .lead{padding: .5rem 2vw;}
+    .teaser img{width:100%}
+    .lead img{width:100%;}
+    .lead {grid-column:1 / span 2;}
+}
+div#footerWrapper {background-color: lightblue;}
+footer{
+    padding: 1rem 1%;
+//    text-align: center;
+//    display: flex;
+}
+.firstcolumn{
+    display:grid;
+    grid-template-columns: 1fr;
+//    display: flex;
+//    justify-content: space-between;
+//    flex:wrap;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li a{text-decoration: none; color:white;}
+.header{text-decoration: none; color:black;}
+.copyright {
+    text-align: center;
+}
+/*-- ClearFix ---*/
+.clearfix:after {
+    content: "";
+    display:table;
+    clear: both;
+}
+
+
+
+
+
+
+
