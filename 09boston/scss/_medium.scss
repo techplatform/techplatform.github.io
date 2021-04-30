@@ -1,0 +1,51 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+header h1 {margin: 2rem; margin-bottom: 0; font-size: 3rem;}
+header h2 {margin: 3rem; margin-top:0; font-weight: normal; font-size: 2rem;}
+
+/*----------- NAVIGATION --------------*/
+
+    nav{
+    background: #fef9ea; 
+    background: -moz-linear-gradient(top, #fef9ea 0%, #f1c235 100%); 
+    background: -webkit-linear-gradient(top, #fef9ea 0%,#f1c235 100%); 
+    background: linear-gradient(to bottom, #fef9ea 0%,#f1c235 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9ea', endColorstr='#f1c235',GradientType=0 ); 
+    }
+    nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+    nav ul li {
+        float: left;
+        width: 16%;
+    }
+
+
+/*----------- MAIN --------------*/
+
+div.cards {
+//    display: flex;
+//    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: center;
+    flex-basis: 50%;
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
