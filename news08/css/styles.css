@@ -428,14 +428,12 @@ nav {
   font-family: Verdana, sans-serif; }
 
 nav button {
-  margin: .2rem 2% 0 0;
+  margin: 0 2% 0 0;
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
   color: #fff;
-  display: block;
-  padding: 0;
-  margin: 0; }
+  display: block;}
 
 nav ul {
   list-style-type: none;
@@ -461,7 +459,7 @@ nav ul.hide {
 
 main {
   display: block;
-  padding: 1rem 2%; }
+  padding: 1rem 0; }
 
 div.grid {
   display: grid;
