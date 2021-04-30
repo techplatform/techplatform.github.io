@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>10|Swag</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/logo.png" alt="logo">
+ <h1>Dressed-Up</h1>
+        <h2>Step Out Looking Fabulous</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+<nav class="clearfix">
+    <button id="hamburgerBtn">
+        <span><i>&#9776;</i>OPEN</span> 
+        <span><i>&otimes;</i>CLOSE</span>
+    </button>
+    
+    <ul id="primaryNav">
+        <li><a href="#">Home</a></li>
+        <li class="parent"><a href="#">Products</a>
+            <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Deals</a></li>
+        <li class="current-menu-item"><a href="#">Order</a>
+        </li>
+        <li><a href="#">Customer Reviews</a></li> 
+
+    </ul>
+    
+</nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+         <h1 class="title">Order</h1>
+        <form method="get" action="thanks.html">
+    
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname lname" required></label>  
+                
+                <label class="top">Phone* <input type="tel" name="phone" required></label> 
+                
+                <label class="top">Email* <input type="email" name="email" required></label> 
+            </fieldset>
+    
+            <fieldset>
+                <legend>Dress-Up Information</legend>
+                
+                <label class="top">Date Needed<input type="date" name="completeDate">
+                </label>
+                
+                <label class="top">Business Name<input type="text" name="busiName"></label> 
+                
+                <label class="top">Business URL <input type="url" name="url"></label> 
+                
+                
+                <label class="top">Color
+                    <select name="color">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="Red"> Red </option>
+                        <option value="Pink"> Pink </option>
+                        <option value="Blue"> Blue </option>
+                        <option value="Green"> Green </option>
+                        <option value="Yellow"> Yellow </option>
+                    </select>
+                </label>
+                
+                <label class="top">Quanity <input type="tel" name="quanity"></label> 
+                
+                <label class="sbs">Material
+                    <label class="sbs style"><input type="radio" name="audience" value="cotton "> Cotton </label>
+                    <label class="sbs style"><input type="radio" name="audience" value="satin"> Satin</label>
+                </label>
+                
+                
+            </fieldset>
+            
+            <fieldset>
+               <legend>Payment Information</legend>
+                <label class="top">Name on Card*<input type="text" name="fname lname" required></label>  
+                
+                <label class="top">Card Number* <input type="tel" name="num" required></label>
+                
+                <label class="top">Expiration Date*<input type="date" name="completeDate" required>
+                </label>
+            </fieldset>
+            
+            <input type="submit" value ="Get Dressed-Up!" class="submitBtn">
+            
+        </form>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2020 &bull; Aniela Govada &bull; Dressed-Up
+    </footer>
+<script src="js/toggleMenu.js"></script>
+<script src="js/scripts.js"></script>
+    
+</body>
+</html>
