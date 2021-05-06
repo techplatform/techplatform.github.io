@@ -1,112 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>DGM-2740|Projects</title>
-</head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
 
+<!-- This start file was build by Paul Cheney  -->
+<title>Capstone Project by Aniela Govada</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+
+
+     
+</head>
 <body>
-    <nav id="navbar">
-        <ul id="navlist">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+<!-- HEADER HERE -->
+	<header>
+        <picture> 
+               <source media="(max-width: 200px)" srcset= "images/logoSmall.png">
+                <source media="(max-width: 560px)" srcset="images/logoMedium.png">
+                <source media="(max-width: 1024px)" srcset="images/logoLarge.png">
+                <img src="images/logoMedium.png"  alt="logo"> 
+        </picture>
+        <h1>Suzanne Collins</h1>
+        <h2>The New York Times best-selling Author </h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button type = "button" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide" >
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="Bio/index.html" target="_blank">Biography</a></li>
+            <li><a href="Works/index.html" target="_blank">Works</a></li>
+            
+            <li><a href="Contact/index.html" target="_blank">Contact</a></li>    
         </ul>
     </nav>
-    <section id="welcome-section">
-        <h1>DGM-2740 Projects</h1>
-        <h2>Aniela Govada</h2>
-    </section>
-    <section id="projects">
-        <a href="resturant05/index.html" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="images/hero.jpeg">
-                <figcaption>05 Restaurant</figcaption>
-            </figure>
-        </a>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <div class="sliders">
+           <picture>
+                   <source srcset="images/herosmall.jpg" media="(max-width: 28.12rem)">
+                   <source srcset="images/hero.jpeg" media="(min-width: 28.12rem)">
+                    <img src="images/slider4small.jpg" alt="slider"> 
+            </picture>
 
-        <a href="band06/index.html" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="images/rockBand.jpeg">
-                <figcaption>06 Band</figcaption>
-            </figure>
-        </a>
+            <picture>
+                   <source srcset="images/slider1small.jpg" media="(max-width: 28.12rem)">
+                   <source srcset="images/slider1.jpeg" media="(min-width: 28.12rem)">
+                    <img src="images/slider4small.jpg" alt="slider"> 
+            </picture>
 
-        <a href="#" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="https://picsum.photos/id/1018/380/240">
-                <figcaption>Project 07</figcaption>
-            </figure>
-        </a>
+            <picture>
+                   <source srcset="images/slider3small.jpg" media="(max-width: 28.12rem)">
+                   <source srcset="images/slider3.jpeg" media="(min-width: 28.12rem)">
+                    <img src="images/slider4small.jpg" alt="slider"> 
+            </picture>
 
-        <a href="news08/index.html" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="/images/C4GTHMM43JGORGPZPFBHWLNJ2Y.jpeg">
-                <figcaption>08 News</figcaption>
-            </figure>
-        </a>
-
-        <a href="boston09/index.html" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="/images/boston.jpeg">
-                <figcaption>09 Boston</figcaption>
-            </figure>
-        </a>
-        <a href="swag10/index.html" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="images/swag.jpeg">
-                <figcaption>10 Swag Shop</figcaption>
-            </figure>
-        </a>
-        <a href="techwatch11/index.html" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="images/tech.jpeg">
-                <figcaption>11 Tech Watch</figcaption>
-            </figure>
-        </a>
-        <a href="#" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="https://picsum.photos/id/1018/380/240">
-                <figcaption>Project 12</figcaption>
-            </figure>
-        </a>
-        <a href="#" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="https://picsum.photos/id/1018/380/240">
-                <figcaption>Project 13</figcaption>
-            </figure>
-        </a>
-        <a href="#" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="https://picsum.photos/id/1018/380/240">
-                <figcaption>Project 14</figcaption>
-            </figure>
-        </a>
-        <a href="#" target="_blank" class="project-tile">
-            <figure class="project-tile">
-                <img src="https://picsum.photos/id/1018/380/240">
-                <figcaption>Project 15</figcaption>
-            </figure>
-        </a>
+            <picture>
+                   <source srcset="images/slider4small.jpg" media="(max-width: 28.12rem)">
+                   <source srcset="images/slider4.jpeg" media="(min-width: 28.12rem)">
+                    <img src="images/slider4small.jpg" alt="slider"> 
+            </picture>
+        </div>
         
-    </section>
+        <h1>Welcome</h1>
+        <div class="welcome"> 
+            <figure class="HomeImage1"><img src="images/Rat_and_me-small.jpg" alt="image"></figure>
+            <p>Hi! Thanks for visiting my website. Here’s a picture of me with a rat in Central Park. If you’ve read my fantasy series, The Underland Chronicles, you will have a clue as to why I chose this photo. If not, you may want to click around and find out a little more about my books. Or visit the Scholastic website for cool games and info!</p>
+        </div>   
+        
+        <div class="book">
+            <figure class="HomeImage"><img src="images/balladImage.png" alt="image"></figure>
+        </div>
+        <div class="">
+            <p class="question"> Check out recent novel "The Ballad of Songbirds and Snakes".</p>
+            <h4>Not sure if you will like it? Here are some reviews to help you decide.</h4>
+            <div class="reviews">
+                <p>
+                    "'The Ballad of Songbirds and Snakes' delivers a mesmerizing look into the life of Coriolanus Snow and the root causes of his villainous behavior. Collins once again proves that she is a master of building a fascinating world around complex characters who must grapple with the complications of chaos and control and their effects on human nature." </p>
+                    <p class="names">--The Associated Press</p>
+            </div>  
+            <div class="reviews">
+                <p>
 
+                    "It's the pull between Coryo's head and heart — and the realization that he actually has a beating heart, not just a rose-scented lump of coal — that makes the future President Snow very worthy of a 517-page prequel."</p>
+                  <p class="names">--The Washington Post</p>  
+             </div>    
+            <div class="reviews">
+                <p>
+
+                    "A gripping mix of whipsaw plot twists and propulsive writing make this story's complex issues—vulnerability and abuse, personal responsibility, and institutionalized power dynamics—vivid and personal."</p>
+                  <p class="names">--Publishers Weekly</p>  
+            </div> 
+            <div class="reviews">
+                <p>
+                    "A Hunger Games without Everdeen might have seemed as peculiar as a Potter without Harry, but it works beautifully, largely thanks to a new character. The clever, charismatic precursor, Lucy Baird Gray, a Covey (a sort of gypsy) who is chosen to represent District 12 in the tenth Games. She is a folk singer of prophetic ballads and has a thing about snakes. She is gorgeous, of course, in her late mother's old rainbow dress (the casting for the film, confirmed by Lionsgate, will be fun)."
+                </p>  
+                <p class="names">--The Times</p>  
+            </div> 
+            
+            <div class="reviews">
+                <p>
+                    "[B]y introducing a new cast of teenagers, Collins is able to raise questions about privilege, the uses of violence, and the futility of war."
+
+
+                </p>
+                <p class="names">--Peoples</p>  
+            </div>
+            <div class="reviews">
+                <p>
+                    "It is a steep challenge to write a book whose hero is, everyone knows, destined to become deeply evil. Do we want to hear — now, after we know the endgame — that the young Voldemort was unfairly saddled with a demerit in class or that the adolescent Sauron fretted because he had to wear hand-me-down clothes?  Yes, please."
+
+
+                </p>
+                <p class="names">--The New York Times, Sarah Lyall</p> 
+            </div>
+            <div class="reviews">
+                <p>
+                    "The Ballad of Songbirds and Snakes builds on the original series' overt critique of violence and those who perpetuate it, again in terms that speak to a more mature audience than their young-adult marketing might suggest. For true fans of The Hunger Games, Collins shines most as she weaves in tantalizing details that lend depth to the gruesome world she created in the original series and Coriolanus's place in its history."
+
+
+                </p>
+                <p class="names">--Time Magazine </p>  
+            </div>
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
     <footer>
-        <p>DGM-2740 Projects</p>
+        &copy; 2021 &bull; Aniela Govada &bull; Suzanne Collins Website Re-Design
     </footer>
-
-<!--    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sliders').slick({
+                dots:true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed:30000
+            });
+        });
+    </script>
+<script src="js/script.js"></script>
 </body>
-
 </html>

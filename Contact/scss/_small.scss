@@ -1,0 +1,199 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color:#151e1e;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2% ;
+//    padding-bottom: .5rem;
+    background-color: #c3d5d5;
+    font-family: 'Cinzel', serif;
+}
+header h1 {margin-top: 1.5rem; margin-bottom: 0;}
+header h2 {margin-top: 0; font-weight: normal; font-size:1rem;}
+header img{
+    float: left;
+    margin: 0 2% 0 0; 
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #669999;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a {
+    display: block;
+    background-color:#85adad;
+    color: #151e1e;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .75rem;
+    text-align: center;
+    
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #669999;
+}
+nav ul li.active a {
+    background-color: #476b6b;
+    color: #fff;
+}
+nav button{
+    margin: 0 .5rem ;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color:#fff;
+//    position: absolute;
+    display: block;
+    padding: 0;
+    
+}
+nav ul.hide {display:none;}
+/*----------- MAIN --------------*/
+main {
+    padding: 2% 3%;
+    min-height: 10rem;
+    background-color: #c3d5d5;
+    grid-area: content;
+    h1 {font-family: 'Cinzel', serif; margin-top:0;}
+    p {font-family: 'Montserrat', sans-serif;}
+}
+form fieldset {
+    margin: 1rem 0;
+    border: 1px solid #669999;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #151e1e;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #151e1e;
+    font-size: .8rem;
+}
+
+form label.bottom, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #151e1e;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border:solid 1px #999;
+    border-radius: 4px;
+    padding: .5rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background: rgba(0,0,0,0.1);
+}
+
+form label.bottom input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border:solid 1px #999;
+    border-radius: 4px;
+    padding: .5rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background: rgba(0,0,0,0.1);
+    height:200px;
+    margin-bottom: 2rem;
+}
+
+form label.style {
+    margin-top:0;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+form input.submitBtn {
+    border: none;
+    background-color: #476b6b;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: #476b6b solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form label.bottom input:required {
+    border-bottom: #476b6b solid 6px;
+    
+}
+
+form label.bottom input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+
+form label.file{
+    color:red;
+    padding: 1rem 5%;
+    float: center;
+    margin-bottom: 10%;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #669999;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

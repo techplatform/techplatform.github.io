@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Capstone Project by Aniela Govada</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <picture>
+               <source media="(max-width: 200px)" srcset= "images/logoSmall.png">
+                <source media="(max-width: 560px)" srcset="images/logoMedium.png">
+                <source media="(max-width: 1024px)" srcset="images/logoLarge.png">
+                <img src="images/logoMedium.png"  alt="logo"> 
+        </picture>
+        <h1>Suzanne Collins</h1>
+        <h2>The New York Times best-selling Author </h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+    <button type = "button" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide" >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Biography</a></li>
+            <li><a href="#">Works</a></li>
+            <li class="active"><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1 class="title">Send In Art-Work</h1>
+        <p>Alot of you are so talented and have created some amazing fan art. So send them in! I would love to see them!</p>
+        <form method="get" action="thanks.html">
+    
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname lname" required></label>  
+                
+                <label class="top">Phone <input type="tel" name="phone"></label> 
+                
+                <label class="top">Email* <input type="email" name="email" required></label> 
+            </fieldset>
+    
+            
+            <fieldset>
+                <legend>Your Fan Art</legend>
+                <label class="bottom">Attach your fan-art below and explain the art piece!*<input type="text" name="fname lname" required></label>  
+                
+                <label class="file">
+                  <input type="file" id="file" aria-label="File browser example">
+                  <span class="file-custom"></span>
+                </label>
+            </fieldset>
+    
+            
+            <input type="submit" value ="Submit Art-Work!" class="submitBtn">
+            
+        </form>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2021 &bull; Aniela Govada &bull; Suzanne Collins Website Re-Design
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

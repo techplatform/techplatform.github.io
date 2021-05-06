@@ -1,0 +1,53 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+//    nav ul {margin-left: 2%; margin-right: 2%}
+nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+//  nav ul{margin-left: 2%;}
+    nav ul li { float:left;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem; font-size: 1.3rem;}
+nav ul li {
+    
+    width: 25%;
+    
+}
+
+
+/*----------- MAIN --------------*/
+.HomeImage img {width: 30%; margin-left:-35px; margin-right:2%; float:left;}
+.HomeImage1 img {width: 30%; float:right;}
+
+.right{
+    float: right; 
+    margin: 0px 0px 15px 15px;
+}
+.welcome{
+    font-size: 1.2rem;
+    margin-bottom:5rem;
+}
+.question{
+    margin-top: 6rem;
+}
+.reviews {
+  border-style: solid;
+  border-color: #c3d5d5;
+    padding:0;
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
